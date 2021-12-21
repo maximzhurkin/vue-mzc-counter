@@ -1,0 +1,53 @@
+.vue-mzc-counter {
+  display: flex;
+  width: 120px;
+}
+.vue-mzc-counter__input,
+.vue-mzc-counter__button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 14px;
+	color: #242424;
+}
+.vue-mzc-counter__button:disabled {
+	color: #cccccc;
+}
+.vue-mzc-counter__input {
+  width: 56px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  text-align: center;
+	transition: border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+.vue-mzc-counter__count,
+input.vue-mzc-counter__input {
+  font-weight: 700;
+}
+input.vue-mzc-counter__input:focus {
+	outline: none;
+  border-color: #306EC4;
+	box-shadow: 0 0 8px 0 rgba(48, 110, 196, 0.15);
+}
+.vue-mzc-counter__input::-webkit-outer-spin-button,
+.vue-mzc-counter__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.vue-mzc-counter__button {
+  cursor: pointer;
+  width: 32px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+}
+.vue-mzc-counter__unit {
+  padding: 4px;
+  font-size: 12px;
+}
