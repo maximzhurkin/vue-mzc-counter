@@ -10,14 +10,9 @@ html, body, #app {
   align-items: center;
   justify-content: center;
 }
-.vue-mzc-counter__input,
-.vue-mzc-counter__button {
-	color: #C5D4E3;
-}
-.vue-mzc-counter__input {
-  background-color: #22272E;
-  border: 1px solid #373E46;
-}
-.vue-mzc-counter__button:disabled {
-	color: #373E46;
+.vue-mzc-counter {
+  --vue-mzc-counter-text-color: #C5D4E3;
+  --vue-mzc-counter-border-color: #373E46;
+  --vue-mzc-counter-disabled-color: #434c55;
+  --vue-mzc-counter-background-color: #22272E;
 }

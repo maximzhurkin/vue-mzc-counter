@@ -1,7 +1,6 @@
 <script>
 import Vue from 'vue';
 import VueMzcCounter from '@/vue-mzc-counter.vue';
-import '../src/vue-mzc-counter.css'
 import './serve.css'
 
 export default Vue.extend({

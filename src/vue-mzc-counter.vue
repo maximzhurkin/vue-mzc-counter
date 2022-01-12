@@ -1,6 +1,6 @@
 <script>
 export default /*#__PURE__*/ {
-  name: "VueMzcCounter", // vue component name
+  name: "VueMzcCounter",
   data() {
     return {
       count: this.value <= this.max ? this.value : this.max,
@@ -94,3 +94,88 @@ export default /*#__PURE__*/ {
     </button>
   </div>
 </template>
+
+<style>
+:root {
+  --vue-mzc-counter-width: 120px;
+  --vue-mzc-counter-height: 32px;
+  --vue-mzc-counter-text-size: 14px;
+  --vue-mzc-counter-unit-size: 12px;
+  --vue-mzc-counter-text-color: #242424;
+  --vue-mzc-counter-border-color: #cccccc;
+  --vue-mzc-counter-disabled-color: #aaaaaa;
+  --vue-mzc-counter-background-color: #ffffff;
+  --vue-mzc-counter-primary-color: #306EC4;
+  --vue-mzc-counter-glow-color: rgba(48, 110, 196, 0.15);
+  --vue-mzc-counter-border-width: 1px;
+  --vue-mzc-counter-border-radius: 4px;
+}
+.vue-mzc-counter {
+  display: flex;
+  width: 120px;
+  width: var(--vue-mzc-counter-width);
+}
+.vue-mzc-counter__input,
+.vue-mzc-counter__button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 32px;
+  height: var(--vue-mzc-counter-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 14px;
+  font-size: var(--vue-mzc-counter-text-size);
+  color: #242424;
+  color: var(--vue-mzc-counter-text-color);
+  transition: color 0.25s ease-in-out; 
+}
+.vue-mzc-counter__button:disabled {
+  color: #aaaaaa;
+  color: var(--vue-mzc-counter-disabled-color);
+}
+.vue-mzc-counter__input {
+  flex: 1;
+  background-color: #ffffff;
+  background-color: var(--vue-mzc-counter-background-color);
+  border-width: 1px;
+  border-width: var(--vue-mzc-counter-border-width);
+  border-style: solid;
+  border-color: #cccccc;
+  border-color: var(--vue-mzc-counter-border-color);
+  border-radius: 4px;
+  border-radius: var(--vue-mzc-counter-border-radius);
+  text-align: center;
+  transition: border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+.vue-mzc-counter__count,
+input.vue-mzc-counter__input {
+  font-weight: 700;
+}
+input.vue-mzc-counter__input:focus {
+  outline: none;
+  border-color: #306EC4;
+  border-color: var(--vue-mzc-counter-primary-color);
+  box-shadow: 0 0 8px 0 rgba(48, 110, 196, 0.15);
+  box-shadow: 0 0 8px 0 var(--vue-mzc-counter-glow-color);
+}
+.vue-mzc-counter__input::-webkit-outer-spin-button,
+.vue-mzc-counter__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.vue-mzc-counter__button {
+  cursor: pointer;
+  width: 32px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+}
+.vue-mzc-counter__unit {
+  padding-left: 4px;
+  font-size: 12px;
+  font-size: var(--vue-mzc-counter-unit-size);
+}
+</style>
