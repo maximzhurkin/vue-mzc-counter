@@ -174,7 +174,7 @@ input.vue-mzc-counter__input:focus {
   border: none;
 }
 .vue-mzc-counter__unit {
-  padding-left: 4px;
+  padding-left: 1px;
   font-size: 12px;
   font-size: var(--vue-mzc-counter-unit-size);
 }
